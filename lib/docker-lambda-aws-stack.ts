@@ -32,9 +32,9 @@ export class DockerLambdaAwsStack extends cdk.Stack {
       {
         functionName: "pose-inference",
         code: lambda.DockerImageCode.fromImageAsset("./image"),
-        memorySize: 1024,
-        timeout: cdk.Duration.seconds(120),
-        role: s3LambdaRole,
+        memorySize: 3008, // Increased memory for PyTorch model
+        timeout: cdk.Duration.seconds(900), // 15 minutes max timeout
+        role: s3LambdaRole, // <-- assign your custom role here
       }
     );
   }
