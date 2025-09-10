@@ -46,7 +46,7 @@ class Model:
             "5": "Back Double Biceps",
             "6": "Front Double Biceps",
             "7": "Front Lat Spread",
-            "11": "Abs & Thisghs",
+            "11": "Abs & Thighs",
             "14": "Side Chest",
             "15": "Side Tricep",
             "16": "Quarter Turn"
