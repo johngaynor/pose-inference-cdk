@@ -1,6 +1,5 @@
 boto3>=1.26.0
-# install torch & torchvision from the PyTorch CPU index
---extra-index-url https://download.pytorch.org/whl/cpu
+--extra-index-url https://download.pytorch.org/whl/cpu # CPU index, significantly smaller
 torch==2.6.0
 torchvision==0.21.0
 numpy==1.26.4

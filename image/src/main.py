@@ -1,7 +1,7 @@
 import json
 import logging
 import time
-from model import load_model, run_inference #test_inference
+from model import load_model, run_inference
 from pprint import pprint
 
 # Configure logging for Lambda
