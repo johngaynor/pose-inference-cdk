@@ -43,13 +43,13 @@ class Model:
         pose_name_map = {
             "1": "Front Relaxed",
             "2": "Back Relaxed",
-            "3": "Quarter Turn (Left)",
-            "4": "Quarter Turn (Right)",
             "5": "Back Double Biceps",
             "6": "Front Double Biceps",
             "7": "Front Lat Spread",
-            "8": "Side Chest (Left)",
-            "11": "Abs & Thighs",
+            "11": "Abs & Thisghs",
+            "14": "Side Chest",
+            "15": "Side Tricep",
+            "16": "Quarter Turn"
         }
         self.class_names = [pose_name_map.get(cid, f"Unknown Pose {cid}") for cid in self.class_ids]
         logger.info(f"✅ Loaded {len(self.class_names)} classes from mapping")
